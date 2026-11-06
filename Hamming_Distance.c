@@ -7,7 +7,7 @@ int hammingDistance(long long a, long long b) {
     int count = 0;
 
     while(x > 0){
-        x &= (x - 1);
+        x &= (x - 1); //Brian Kernighan’s trick
         count++;
     }
     return count;
